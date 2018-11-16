@@ -20,8 +20,9 @@ set showcmd
 nnoremap <F2> :set nonumber!<CR>
 set incsearch
 set hlsearch
-set nowrapscan
 set showmatch
+set wrapscan
+set ignorecase
 
 "NERDTree config
 " open a NERDTree automatically when vim starts up
