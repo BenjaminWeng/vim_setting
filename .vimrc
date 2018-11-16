@@ -36,6 +36,10 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 map <F2> :NERDTreeToggle<CR>
 "close vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+nmap <C-Left> gT
+nmap <C-Right> gt
+map <C-Up> <PageUp>
+map <C-Down> <PageDown>
 
 set cscopetag
 set csto=0
