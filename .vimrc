@@ -61,3 +61,5 @@ nmap zf :cs find f <C-R>=expand("<cfile>")<CR><CR>
 nmap zi :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
 nmap zd :cs find d <C-R>=expand("<cword>")<CR><CR>
 nmap ct :tab cs find t 
+
+map <F8> :cs reset<CR><CR>
