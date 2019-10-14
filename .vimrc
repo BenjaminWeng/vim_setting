@@ -9,7 +9,7 @@ filetype plugin indent on    " required
 
 syntax enable
 set background=dark
-set nu
+"set nu
 set expandtab
 set tabstop=4
 set softtabstop=4
@@ -64,3 +64,5 @@ nmap zd :cs find d <C-R>=expand("<cword>")<CR><CR>
 nmap ct :tab cs find t 
 
 map <F8> :cs reset<CR><CR>
+map <F1> :TlistToggle<CR><CR>
+
