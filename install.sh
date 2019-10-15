@@ -5,16 +5,20 @@ sudo apt-get install ctags
 # vim_setting
 #1. Set up Vundle:  
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim  
-#1.5 Set up YCM  
-#https://juejin.im/post/5b597a9cf265da0f9402b434  
-#2. copy .vimrc
+
+#2. copy .vimrc/taglist
 cp .vimrc ~/.vimrc
-#2.5 YCM  
+cp taglist_46/doc/taglist.txt /usr/share/vim/vim80/plugin/
+cp taglist_46/plugin/taglist.vim /usr/share/vim/vim80/plugin/
+
+#3. YCM
 cd ~/.vim/bundle  
 git clone https://github.com/Valloric/YouCompleteMe.git  
 cd ~/.vim/bundle/YouCompleteMe  
 git submodule update --init --recursive  
 ./install.py --all
-#3. Install Plugins:  
+
+#4. Install Plugins:  
 sudo vim +PluginInstall +qall
 git config --global core.editor vim
+
