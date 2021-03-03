@@ -1,3 +1,10 @@
+#basic tools
+sudo apt-get install git
+sudo apt-get install vim
+sudo apt-get install cmake
+sudo apt-get install build-essential
+sudo apt-get install libasound2-dev
+
 #cscope/ctags
 sudo apt-get install cscope  
 sudo apt-get install ctags
