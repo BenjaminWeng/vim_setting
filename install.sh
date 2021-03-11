@@ -29,3 +29,13 @@ git submodule update --init --recursive
 sudo vim +PluginInstall +qall
 git config --global core.editor vim
 
+#5. set new YCM
+sudo add-apt-repository ppa:jonathonf/vim
+sudo apt update
+sudo apt install vim
+cd ~/.vim/bundle/YouCompleteMe/
+sudo apt-get install python3-dev
+sudo apt-get install g++-8
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 700 --slave /usr/bin/g++ g++ /usr/bin/g++-7
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 800 --slave /usr/bin/g++ g++ /usr/bin/g++-8
+sudo python3 install.py --clang-completer
