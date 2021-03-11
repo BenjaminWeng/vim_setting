@@ -66,3 +66,6 @@ nmap ct :tab cs find t
 map <F8> :cs reset<CR><CR>
 map <F1> :TlistToggle<CR><CR>
 
+let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
+set completeopt-=preview
+

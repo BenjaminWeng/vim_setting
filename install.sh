@@ -15,6 +15,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 #2. copy .vimrc/taglist
 cp .vimrc ~/.vimrc
+cp .ycm_extra_conf.py ~/
 cp taglist_46/doc/taglist.txt /usr/share/vim/vim80/plugin/
 cp taglist_46/plugin/taglist.vim /usr/share/vim/vim80/plugin/
 
@@ -39,3 +40,4 @@ sudo apt-get install g++-8
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 700 --slave /usr/bin/g++ g++ /usr/bin/g++-7
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 800 --slave /usr/bin/g++ g++ /usr/bin/g++-8
 sudo python3 install.py --clang-completer
+
